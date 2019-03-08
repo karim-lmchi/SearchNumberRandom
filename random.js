@@ -3,16 +3,13 @@
 function random(){
 
     let nombreRecurence = 0;
-    let boucle = 3;
+    let valeurIdentique = 0;
 
-    while(boucle < 4){
-        let valeurIdentique = Math.floor((Math.random() * valeurMax) + 1);
+    while(valeurIdentique !== valeur){
 
-        if(valeurIdentique !== valeur){
         nombreRecurence++;
-        } else {
-            boucle += 5;
-        }
+        valeurIdentique = Math.floor((Math.random() * valeurMax) + 1);
+       
     }
 
     var result = document.getElementById("resultat");
