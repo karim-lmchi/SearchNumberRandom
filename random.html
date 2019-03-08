@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <script src="random.js"></script>
+</head>
+<body>
+
+    <script>
+    
+        let valeurMax = 1000;
+        let valeur = Math.floor(Math.random() * Math.floor(valeurMax));
+        console.log(valeur);
+        
+    </script>
+
+        <h3>
+            Combien de fois faut il générer un nombre aléatoire avant de retomber sur un premier nombre
+            qui à lui même été généré aléatoirement ?
+        </h3>
+
+        <input type="button" value="Afficher le nombre de fois" onclick="random()"/>
+
+    <div id="resultat">
+
+    </div>
+    
+</body>
+</html>
